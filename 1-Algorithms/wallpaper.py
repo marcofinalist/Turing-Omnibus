@@ -36,11 +36,11 @@ class Application(tk.Frame):
                 c = int(x * x + y * y)
 
                 if c % 3 == 0:
-                    self.draw_pixel(canvas=self.canvas, x=x+corna, y=y+cornb, fill='')
+                    self.draw_pixel(canvas=self.canvas, x=i, y=j, fill='')
                 elif c % 3 == 1:
-                    self.draw_pixel(canvas=self.canvas, x=x+corna, y=y+cornb, fill='gray')
+                    self.draw_pixel(canvas=self.canvas, x=i, y=j, fill='gray')
                 elif c % 3 == 2:
-                    self.draw_pixel(canvas=self.canvas, x=x+corna, y=y+cornb, fill='black')
+                    self.draw_pixel(canvas=self.canvas, x=i, y=j, fill='black')
 
     def draw_pixel(self, canvas, x, y, fill):
         outline = ''
